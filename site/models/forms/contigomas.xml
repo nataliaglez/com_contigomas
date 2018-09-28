@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Añadimos los campo queremos mostrar en la vista de codigorecibo
+	que la vista entrada de datos -->
+<form>
+	<fieldset name="contigomas" label="COM_CONTIGOMAS_FORM_LABEL">
+		
+		<field name="nombre"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_NOMBRE_LABEL"
+			description="COM_CONTIGOMAS_FIELD_NOMBRE_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		<field name="apellidos"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_APELLIDOS_LABEL"
+			description="COM_CONTIGOMAS_FIELD_APELLIDOS_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+
+		<field name="dni"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_DNI_LABEL"
+			description="COM_CONTIGOMAS_FIELD_DNI_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+       
+        <field name="email"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_EMAIL_LABEL"
+			description="COM_CONTIGOMAS_FIELD_EMAIL_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+        <field name="calle"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_CALLE_LABEL"
+			description="COM_CONTIGOMAS_FIELD_CALLE_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+        <field name="numero"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_NUMERO_LABEL"
+			description="COM_CONTIGOMAS_FIELD_NUMERO_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+        <field name="piso"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_PISO_LABEL"
+			description="COM_CONTIGOMAS_FIELD_PISO_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+        
+        <field name="municipio"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_MUNICIPIO_LABEL"
+			description="COM_CONTIGOMAS_FIELD_MUNICIPIO_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+        <field name="provincia"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_PROVINCIA_LABEL"
+			description="COM_CONTIGOMAS_FIELD_PROVINCIA_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
+
+	</fieldset>
+</form>
+
+<!--	
+			description="COM_CODIGORECIBO_CODIGORECIBO_CODIGO_DESC"
+			label="COM_CODIGORECIBO_CODIGORECIBO_CODIGO_LABEL"
+			-->
