@@ -36,6 +36,27 @@ class ContigomasModelContigomas extends JModelForm
 
 		return $data;
 	}
+	public function getInsertQuery($datos){
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		//~ $columns = array('nombre', 'apellidos', 'dni', 'telefono', 'email', 'calle', 'numero', 'piso', 'codigopostal', 'municipio', 'provincia', 'aceptar', 'created',  'modified');
+		//~ $idUsuario="664";
+		//~ $aliasUsua='natalia';
+		$fecha='"'.date("Y-m-d H:i:s").'"';
+		//~ $values = array($datos['nombre'], $datos['apellidos'], $datos['dni'], '5698563589', $datos['email'], $datos['calle'], $datos['numero'], $datos['piso'], '66225', $datos['municipio'], $datos['provincia'], $datos['terminos'], $fecha, $fecha);
+		//~ $query
+			//~ ->insert($db->quoteName('#__contigomas'))
+			//~ ->columns($db->quoteName($columns))
+			//~ ->values(implode(',', $values));
+		$query='insert into #__contigomas (nombre, apellidos, dni, telefono, email, 
+		calle, numero, piso, codigopostal, municipio, provincia, aceptar, created,  modified) VALUES (
+		"'.$datos['nombre'].'", "'.$datos['apellidos'].'", "'.$datos['dni'].'", "5698563589", "'.$datos['email'].'", 
+		"'.$datos['calle'].'", "'.$datos['numero'].'", "'.$datos['piso'].'", "66225", "'.$datos['municipio'].'", 
+		"'.$datos['provincia'].'", "'.$datos['terminos'].'", '.$fecha.', '.$fecha.')';
+		$db->setQuery($query);
+		$db->execute();
+		return $db;
+	}
 	
 	
 }
