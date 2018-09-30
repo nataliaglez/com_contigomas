@@ -28,5 +28,20 @@ class ContigomasModelContigomas extends JModelList
 		
 		return $query;
 	}
+	protected function getInsertQuery(){
+		$db = JFactory::getDBO();
+		$query = $db->getQuery(true);
+		$columns = array('nombre', 'apellidos', 'dni', 'telefono', 'email', 'calle', 'numero', 'piso', 'codigopostal', 'municipio', 'provincia', 'aceptar', 'created', 'created_by', 'created_by_alias', 'modified', 'modified_by');
+		$idUsuario="661";
+		$aliasUsua='Ricardo40';
+		$fecha=date("Y-m-d H:i:s");
+		$values = array($nombre, $apellido, $dni, $telefono, $email, $calle, $numero, $piso, $codigoPostal, $municipio, $provincia, $aceptar, $fecha, $idUsuario, $aliasUsua, $fecha, $idUsuario);
+		$query
+			->insert($db->quoteName('#__contigomas'))
+			->columns($db->quoteName($columns))
+			->values(implode(',', $values));
+		$db->setQuery($query);
+		$db->execute();
+	}
 	
 }
