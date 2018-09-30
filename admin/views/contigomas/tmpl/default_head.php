@@ -2,9 +2,6 @@
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
 // Definimos texto de cabeceras vista listado 
-$campo1 = JText::_( 'COM_CODIGORECIBO_FIELD_NOMBRE_LABEL');
-$campo2 = JText::_( 'COM_CODIGORECIBO_FIELD_APELLIDOS_LABEL');
-$campo3 = JText::_('COM_CODIGORECIBO_FIELD_CODIGOPOSTAL_LABEL');
 ?>
 
 <tr>
@@ -19,14 +16,40 @@ $campo3 = JText::_('COM_CODIGORECIBO_FIELD_CODIGOPOSTAL_LABEL');
 		<?php echo  JHTML::_('grid.sort', 'Fecha', 'created', $listDirn, $listOrder); ?>
 	</th>			
 	<th width="5%">
-		<?php echo  JHTML::_('grid.sort', $campo2, 'nombre', $listDirn, $listOrder); ?>
+		<?php echo  JHTML::_('grid.sort', 'Nombre', 'nombre', $listDirn, $listOrder); ?>
 	</th>
 	<th width="5%">
-		<?php echo  JHTML::_('grid.sort', $campo1, 'apellidos', $listDirn, $listOrder); ?>
+		<?php echo  JHTML::_('grid.sort', 'Apellidos', 'apellidos', $listDirn, $listOrder); ?>
 	</th>
 	<th width="5%">
-		<?php echo  JHTML::_('grid.sort', $campo3, 'codigopostal', $listDirn, $listOrder); ?>
+		<?php echo  JHTML::_('grid.sort', 'Codigo Postal', 'codigopostal', $listDirn, $listOrder); ?>
 	</th>
-	
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'DNI', 'dni', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Teléfono', 'telefono', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'EMAIL', 'email', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Calle', 'calle', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Número', 'numero', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Piso', 'piso', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Municipio', 'municipio', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Provincia', 'provincia', $listDirn, $listOrder); ?>
+	</th>
+	<th width="5%">
+		<?php echo  JHTML::_('grid.sort', 'Terminos', 'terminos', $listDirn, $listOrder); ?>
+	</th>
 	
 </tr>

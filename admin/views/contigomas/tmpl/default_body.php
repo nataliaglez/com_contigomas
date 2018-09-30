@@ -4,9 +4,7 @@ defined('_JEXEC') or die('Restricted Access');
 ?>
 
 <?php 
-//~ echo '<pre>';
-//~ print_r($this);
-//~ echo '</pre>';
+
 foreach($this->items as $i => $item): ?>
 	<tr class="row<?php echo $i % 2; ?>">
 		<td>
@@ -26,6 +24,33 @@ foreach($this->items as $i => $item): ?>
 		</td>
 		<td>
 			<?php echo $item->codigopostal; ?>
+		</td>
+		<td>
+			<?php echo $item->dni; ?>
+		</td>
+		<td>
+			<?php echo $item->telefono; ?>
+		</td>
+		<td>
+			<?php echo $item->email; ?>
+		</td>
+		<td>
+			<?php echo $item->calle; ?>
+		</td>
+		<td>
+			<?php echo $item->numero; ?>
+		</td>
+		<td>
+			<?php echo $item->piso; ?>
+		</td>
+		<td>
+			<?php echo $item->municipio; ?>
+		</td>
+		<td>
+			<?php echo $item->provincia; ?>
+		</td>
+		<td>
+			<?php echo $item->aceptar; ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
