@@ -29,7 +29,14 @@
 			size="30"
 			required="true"
 		/>
-       
+       <field name="telefono"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_TELEFONO_LABEL"
+			description="COM_CONTIGOMAS_FIELD_TELEFONO_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
         <field name="email"
 			type="text"
 			label="COM_CONTIGOMAS_FIELD_EMAIL_LABEL"
@@ -62,7 +69,14 @@
 			size="30"
 			required="true"
 		/>
-        
+        <field name="codigoPostal"
+			type="text"
+			label="COM_CONTIGOMAS_FIELD_CODIGOPOSTAL_LABEL"
+			description="COM_CONTIGOMAS_FIELD_CODIGOPOSTAL_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
         <field name="municipio"
 			type="text"
 			label="COM_CONTIGOMAS_FIELD_MUNICIPIO_LABEL"
