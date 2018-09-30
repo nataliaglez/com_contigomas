@@ -79,6 +79,14 @@
 			size="30"
 			required="true"
 		/>
+		<field name="terminos"
+			type="checkbox"
+			label="COM_CONTIGOMAS_FIELD_TERMINOS_LABEL"
+			description="COM_CONTIGOMAS_FIELD_TERMINOS_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		/>
 
 	</fieldset>
 </form>
