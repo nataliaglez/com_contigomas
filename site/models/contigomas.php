@@ -55,7 +55,12 @@ class ContigomasModelContigomas extends JModelForm
 		"'.$datos['provincia'].'", "'.$datos['terminos'].'", '.$fecha.', '.$fecha.')';
 		$db->setQuery($query);
 		$db->execute();
-		return $db;
+		if ($db->getErrorNum()){
+			$mensaje="Error al insertar los datos";
+		}else{
+			$mensaje="Datos insertados con éxito";
+		}
+      return $mensaje; 
 	}
 	
 	
