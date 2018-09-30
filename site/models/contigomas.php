@@ -50,8 +50,8 @@ class ContigomasModelContigomas extends JModelForm
 			//~ ->values(implode(',', $values));
 		$query='insert into #__contigomas (nombre, apellidos, dni, telefono, email, 
 		calle, numero, piso, codigopostal, municipio, provincia, aceptar, created,  modified) VALUES (
-		"'.$datos['nombre'].'", "'.$datos['apellidos'].'", "'.$datos['dni'].'", "5698563589", "'.$datos['email'].'", 
-		"'.$datos['calle'].'", "'.$datos['numero'].'", "'.$datos['piso'].'", "66225", "'.$datos['municipio'].'", 
+		"'.$datos['nombre'].'", "'.$datos['apellidos'].'", "'.$datos['dni'].'", "'.$datos['telefono'].'", "'.$datos['email'].'", 
+		"'.$datos['calle'].'", "'.$datos['numero'].'", "'.$datos['piso'].'", "'.$datos['codigoPostal'].'", "'.$datos['municipio'].'", 
 		"'.$datos['provincia'].'", "'.$datos['terminos'].'", '.$fecha.', '.$fecha.')';
 		$db->setQuery($query);
 		$db->execute();
