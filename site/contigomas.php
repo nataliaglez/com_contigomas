@@ -30,6 +30,10 @@ $html_respuestaformulario = $controller->resultado['html_respuestaformulario'];
 //~ 
 $view="vista1"; 
 //~ $controller->execute(JFactory::getApplication()->input->set('resultado', $resultado));
+//añadir datos a base de datos
+include_once 'models/contigomas.php';
+$contigo=new ContigomasModelContigomas();
+$insert=$contigo->getInsertQuery($controller->resultado);
 
 $controller->execute(JFactory::getApplication()->input->set('view', $view));
 //~ echo '+++++++++++++++++++++++++++++++++++++++++++++++++++';
