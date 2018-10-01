@@ -13,7 +13,8 @@ class ContigomasViewContigomas extends JViewLegacy
 	function display($tpl = null)
 	{
 		//conseguimos el modelo
-		$model =& $this->getModel();
+
+        $model = $this->getModel();
 		//recogemos el mensaje del modelo y lo pasamos por referencia dspues
 		//~ $mensaje = $model->getMensaje();
 		//~ //uso assignRef para crear referencias que usará el layout (tmpl)
@@ -24,7 +25,8 @@ y visualizar objeto paginación.
 */
 		
 		//es necesario establecerlos para poder usarlos en default...
-		$this->items		= $this->get('Items');
+        $this->state            = $this->get('State');
+        $this->items		= $this->get('Items');
 		$this->pagination	= $this->get('Pagination');
 		
 		

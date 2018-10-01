@@ -12,7 +12,7 @@ class ContigomasController extends JControllerLegacy
 		//programar una vista por defecto si no se establece
 		$input = JFactory::getApplication()->input;
 		//set establece y get toma
-		$input->set('view', $input->getCmd('view', 'contigomas'));
+		$view= $input->set('view', $input->getCmd('view', 'contigomas'));
 		
 		
 		//ESTO NO ME HACE NADA

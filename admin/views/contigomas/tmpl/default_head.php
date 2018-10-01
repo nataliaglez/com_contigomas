@@ -1,7 +1,9 @@
 <?php
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
-// Definimos texto de cabeceras vista listado 
+// Definimos texto de cabeceras vista listado
+$listOrder      = $this->escape($this->state->get('list.ordering', 'id'));
+$listDirn       = $this->escape($this->state->get('list.direction', 'asc'));
 ?>
 
 <tr>
