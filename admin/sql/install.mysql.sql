@@ -1,5 +1,6 @@
 CREATE TABLE IF NOT EXISTS `#__contigomas` (
   `id` integer(10) UNSIGNED NOT NULL auto_increment,
+  `codigo`  varchar(15) NOT NULL DEFAULT '',
   `nombre`  varchar(100) NOT NULL DEFAULT '',
   `apellidos`  varchar(100) NOT NULL DEFAULT '',
   `dni`  varchar(9) NOT NULL DEFAULT '',

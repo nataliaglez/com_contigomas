@@ -26,8 +26,8 @@ $resultado = $this->resultado;
         </div>	
 </div>
 <?php 
-}else
-{
+//~ }else
+//~ {
 	//	echo 'meter parametros error codigo';
 ?>
 		<div class='vista_error' style="text-align:center; display: table; margin: 0px auto;">
@@ -36,5 +36,5 @@ $resultado = $this->resultado;
 		
 		</div>
 <?php 
-} //fin de else
+//~ } //fin de else
 ?>

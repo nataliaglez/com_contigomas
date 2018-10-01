@@ -6,7 +6,7 @@ defined('_JEXEC') or die('Restricted Access');
 //~ print_r($this);
 //~ echo'</pre>';
 ?>
-<div class="codigotitulo" style="text-align:center">
+<div class="contenido">
 <h1> 
 	<?php // opc del componente PROBLEMA: solo tiene acceso el administrador
 		//params esta asignado en la view.html para poder recoger los parametros de opc dl componente

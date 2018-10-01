@@ -8,6 +8,10 @@
 defined('_JEXEC') or die('Restricted Access');
 // cargar de tooltip
 JHtml::_('behavior.tooltip');
+
+$listOrder      = $this->escape($this->state->get('list.ordering', 'id'));
+$listDirn       = $this->escape($this->state->get('list.direction', 'DESC'));
+
 ?>
 <form action="<?php echo JRoute::_('index.php?option=com_contigomas'); ?>" method="post" name="adminForm" id="adminForm">
 	<table class="table table-striped">
